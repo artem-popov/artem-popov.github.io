@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Artem Popov's blog</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Artem Popov</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    
+    <li><span>27 Apr 2014</span> &raquo; <a href="/vim/2014/04/27/vim-autosave.html">Vim autosave</a>
+        <p>
+           <p>I found myself that I want to autosave in vim. Hopefully after a few googling i summarized with this:</p>
+
+<div class="highlight"><pre><code class="vim">    <span class="k">set</span> <span class="nb">updatetime</span><span class="p">=</span><span class="m">1000</span>
+    autocmd <span class="nb">CursorHoldI</span><span class="p">,</span><span class="nb">CursorHold</span> * :<span class="k">update</span>
+</code></pre></div>
+
+<p>Put it in your .vimrc and every second of no-doing your current changed buffer will be saved with informational message. </p>
+
+<p>Just add &#39;silent!&#39; before &#39;:update&#39; to get rid of the message.</p>
+ 
+        </p>
+    </li>
+    
+  </ul>
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                GitHub:<br />
+                Twitter<br />
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+              <a href="https://github.com/artem-popov">github.com/artem-popov</a><br />
+                <a href="https://twitter.com/avpxalive">twitter.com/avxalive</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
